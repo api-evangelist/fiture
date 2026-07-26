@@ -1,7 +1,27 @@
 aid: fiture
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fiture.png
 name: Fiture
-description: 'Fiture is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Fiture is a consumer smart-home fitness company that makes interactive
+  AI-powered fitness mirrors for at-home workouts. Its hardware line includes the Fiture
+  Core flagship mirror and the compact Fiture Mini, each pairing a wall-mounted display
+  with a camera and on-device AI that delivers real-time motion tracking, gesture recognition,
+  rep counting, and posture feedback across a library of live and on-demand fitness
+  classes sold through a membership. The company was founded in China and is backed
+  by venture investor Hongshan (formerly Sequoia Capital China). Fiture operates a
+  direct-to-consumer commerce and membership website but does not currently publish
+  a public developer program, API, or SDK; this API Evangelist profile tracks the company
+  and its public web surface (support, legal, and account pages).'
 url: https://raw.githubusercontent.com/api-evangelist/fiture/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Fitness
+- Connected Fitness
+- Smart Home
+- Health and Wellness
+- Consumer Hardware
+- Interactive Fitness
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fiture-domain-security.yml
 - type: Website
   url: https://fiture.com
+- type: Support
+  url: https://fiture.com/questions
+- type: SignUp
+  url: https://fiture.com/user/signin
+- type: TermsOfService
+  url: https://fiture.com/agreement/terms-service
+- type: PrivacyPolicy
+  url: https://fiture.com/agreement/privacy-notice
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
